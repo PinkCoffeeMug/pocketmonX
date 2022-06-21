@@ -54,8 +54,11 @@
 - [x] tile layering for ocean (randomization) and landmasses
 - [x] tile layering for a plateau
 - [x] tile layering for a house
-- [ ] layering and placement of trees
+- [x] layering and placement of trees
 - [ ] landscape details
+  - [x] path
+  - [x] fence
+  - [ ] other
 - [ ] collisions and map boundaries
 - [ ] foreground layers
 - [ ] exporting layers for project import
