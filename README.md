@@ -50,9 +50,10 @@
 - [x] setup
   - [x] find assets
   - [x] tiled map editor
-  - [x] import into project
+  - [x] import
 - [x] tile layering for ocean (randomization) and landmasses
 - [x] tile layering for a plateau
+- [x] tile layering for a house
 - [ ] layering and placement of trees
 - [ ] landscape details
 - [ ] collisions and map boundaries
