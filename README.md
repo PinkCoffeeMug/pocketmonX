@@ -48,7 +48,7 @@
 ### :pushpin: Map creation w. Tiled Map Editor
 
 - [x] setup
-  - [x] find assets
+  - [x] find assets ( [Itch.io](https://itch.io/) : [1](https://cypor.itch.io/12x12-rpg-tileset) )
   - [x] tiled map editor
   - [x] import
 - [x] tile layering for ocean (randomization) and landmasses
