@@ -47,11 +47,12 @@
 
 ### :pushpin: Map creation w. Tiled Map Editor
 
-- [ ] setup
-  - [ ] find assets
-  - [ ] tiled map editor
-  - [ ] import into project
-- [ ] tile layering for ocean and landmasses
+- [x] setup
+  - [x] find assets
+  - [x] tiled map editor
+  - [x] import into project
+- [x] tile layering for ocean (randomization) and landmasses
+- [x] tile layering for a plateau
 - [ ] layering and placement of trees
 - [ ] landscape details
 - [ ] collisions and map boundaries
