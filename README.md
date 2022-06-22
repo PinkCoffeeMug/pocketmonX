@@ -5,21 +5,21 @@
   <p align="center">
     { a JS game inspired by Pokémon }
     </br>
-    <a href="https://github.com/pink-coffee-mug/pockemonX/issues"> » submit a suggestion </a>
+    <a href="https://github.com/pink-coffee-mug/pocketmonX/issues"> » submit a suggestion </a>
     ·
-    <a href="https://github.com/pink-coffee-mug/pockemonX/issues">» report a bug </a>
+    <a href="https://github.com/pink-coffee-mug/pocketmonX/issues">» report a bug </a>
     ·
-    <a href="https://github.com/pink-coffee-mug/pockemonX">» contact </a>
+    <a href="https://github.com/pink-coffee-mug/pocketmonX">» contact </a>
   </p>
 
   <div align="center">
 
-![GitHub forks](https://img.shields.io/github/forks/pink-coffee-mug/pockemonX?style=social)
-![GitHub stars](https://img.shields.io/github/stars/pink-coffee-mug/pockemonX?style=social)
+![GitHub forks](https://img.shields.io/github/forks/pink-coffee-mug/pocketmonX?style=social)
+![GitHub stars](https://img.shields.io/github/stars/pink-coffee-mug/pocketmonX?style=social)
 
-![GitHub License](https://img.shields.io/github/license/pink-coffee-mug/pockemonX?color=yellow)
-![GitHub Pull Request (open)](https://img.shields.io/github/issues-pr/pink-coffee-mug/pockemonX?color=hotpink)
-![GitHub last commit](https://img.shields.io/github/last-commit/pink-coffee-mug/pockemonX?color=blue)
+![GitHub License](https://img.shields.io/github/license/pink-coffee-mug/pocketmonX?color=yellow)
+![GitHub Pull Request (open)](https://img.shields.io/github/issues-pr/pink-coffee-mug/pocketmonX?color=hotpink)
+![GitHub last commit](https://img.shields.io/github/last-commit/pink-coffee-mug/pocketmonX?color=blue)
 
   </div>
 </p>
@@ -47,21 +47,24 @@
 
 ### :pushpin: Map creation w. Tiled Map Editor
 
-- [x] setup
+- [x] Setup
   - [x] find assets ( [Itch.io](https://itch.io/) : [1](https://cypor.itch.io/12x12-rpg-tileset) )
   - [x] tiled map editor
   - [x] import
-- [x] tile layering for ocean (randomization) and landmasses
-- [x] tile layering for a plateau
-- [x] tile layering for a house
-- [x] layering and placement of trees
-- [ ] landscape details
-  - [x] path
+- [x] Landscape/Tile Layering w. Randomization (top-down view)
+  - [x] foreground objects
+  - [x] collisions & map boundraies
+  - [x] house
+  - [x] plateau
+  - [x] trees
+  - [x] dock
   - [x] fence
-  - [ ] other
-- [ ] collisions and map boundaries
-- [ ] foreground layers
-- [ ] exporting layers for project import
+  - [x] grass & flowers
+  - [x] battle patch
+  - [x] paths
+  - [x] island
+  - [x] ocean
+- [x] Exporting layers (collisions as a data file)
 
 ### :pushpin: Player and Map Development
 
