@@ -1,6 +1,6 @@
 <!-- PROJECT SUMMARY -->
 <p align="center">
-  <h1 align="center">PockémonX</h1>
+  <h1 align="center">PockétmonX</h1>
 
   <p align="center">
     { a JS game inspired by Pokémon }
