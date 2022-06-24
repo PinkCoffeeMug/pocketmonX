@@ -44,13 +44,13 @@
 
 ### :pushpin: Map creation w. Tiled Map Editor
 
-- [x] Setup
+- [x] setup
   - [x] find assets ( [Itch.io](https://itch.io/) : [1](https://cypor.itch.io/12x12-rpg-tileset) )
   - [x] tiled map editor
   - [x] import
 - [x] Landscape/Tile Layering w. Randomization (top-down view)
   - [x] foreground objects
-  - [x] collisions & map boundraies
+  - [x] collisions & map boundary
   - [x] house
   - [x] plateau
   - [x] trees
@@ -61,17 +61,17 @@
   - [x] paths
   - [x] island
   - [x] ocean
-- [x] Exporting layers (collisions as a data file)
+- [x] Exporting layers (png)
 
 ### :pushpin: Player and Map Development
 
-- [ ] setup
-- [ ] import and render map
+- [x] setup
+- [x] import and render map
 - [ ] player creation
-- [ ] player movement on map with keydown
-- [ ] player-to-map-boundary collisions
+- [ ] player movement
+- [ ] boundary collisions
 - [ ] foreground objects
-- [ ] player movement animation
+- [ ] movement animation
 
 ### :pushpin: Battle Sequences
 
@@ -99,9 +99,9 @@ Contributions are welcome! Follow these steps:
 > 5. Open a Pull Request -->
 
 <!-- LICENSE -->
-<!-- ## :pencil: License
+## :pencil: License
 
-This project is licensed under [MIT](https://opensource.org/licenses). -->
+This project is licensed under [MIT](https://opensource.org/licenses).
 
 <!-- ACKNOWLEDGEMENTS -->
 <!-- ## Acknowledgements -->
