@@ -14,8 +14,9 @@
 
   <div align="center">
 
-![GitHub License](https://img.shields.io/github/license/pink-coffee-mug/pocketmonX?color=yellow)
+![GitHub License](https://img.shields.io/github/license/pink-coffee-mug/pocketmonX)
 ![GitHub Pull Request (open)](https://img.shields.io/github/issues-pr/pink-coffee-mug/pocketmonX?color=hotpink)
+![GitHub Issues](https://img.shields.io/github/issues/pink-coffee-mug/pocketmonX?color=purple)
 ![GitHub last commit](https://img.shields.io/github/last-commit/pink-coffee-mug/pocketmonX?color=blue)
 
   </div>
