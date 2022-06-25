@@ -24,12 +24,23 @@ playerImage.src = './img/playerDown.png' //draw player
 
 // images are drawn when they're loaded 
 image.onload = () => {
+    
     c.drawImage(image,-740, -600) //map starting point
-
+    
     // player starting point
     c.drawImage(
-        playerImage, 
-        (canvas.width / 2) - (playerImage.width / 2), 
-        (canvas.height / 2) - (playerImage.height / 2)
+        playerImage,
+
+        //cropping player image
+        0, // x 
+        0, // y 
+        playerImage.width / 4, // crop width
+        playerImage.height, // crop height
+        
+        // where player should render at
+        (canvas.width / 2) - (playerImage.width / 4) / 2, // player's x-pos 
+        (canvas.height / 2) - (playerImage.height / 2), // player's y-pos
+        playerImage.width / 4, 
+        playerImage.height 
     )
 }
