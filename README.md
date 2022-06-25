@@ -68,7 +68,7 @@
 
 - [x] setup
 - [x] import and render map
-- [ ] player creation
+- [x] player creation
 - [ ] player movement
 - [ ] boundary collisions
 - [ ] foreground objects
