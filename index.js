@@ -17,15 +17,61 @@ c.fillRect(0, 0, canvas.width, canvas.height)
 
 // html image objects and src
 const image = new Image() 
-image.src = './img/PokeTown.png' //draw town map
+image.src = './img/PokeTown.png' //town source map
 
 const playerImage = new Image()
-playerImage.src = './img/playerDown.png' //draw player
+playerImage.src = './img/playerDown.png' //player image
 
-// images are drawn when they're loaded 
-image.onload = () => {
-    
-    c.drawImage(image,-740, -600) //map starting point
+/*
+create sprite class 
+for easy bg manipulations later 
+*/
+
+class Sprite {
+    constructor({
+        position,
+        velocity,
+        image
+    }) {
+        this.position = position
+        this.image = image
+    }
+
+    draw() {
+        c.drawImage(this.image, -740, -600) //map
+    }
+}
+
+//background sprite
+const background = new Sprite({ 
+    position: {
+        x: -740,
+        y: -600
+    },
+    image: image
+})
+
+// keys: reference for listeners
+const keys = {
+    w: {
+        pressed: false
+    },
+    a: {
+        pressed: false
+    },
+    s: {
+        pressed: false
+    },
+    d: {
+        pressed: false
+    }
+}
+
+// request animation
+function animate() {
+    window.requestAnimationFrame(animate)
+    background.draw()
+    console.log('animate')
     
     // player starting point
     c.drawImage(
@@ -43,4 +89,50 @@ image.onload = () => {
         playerImage.width / 4, 
         playerImage.height 
     )
+
+    // if pressed keys, then move
+    if (keys.w.pressed) {
+        background.position.y = background.position.y - 3 // current pos on y-axis
+    }
 }
+animate()
+
+/*
+player movements on keyboard
+*/
+
+// listen for keyboard event with object e
+window.addEventListener('keydown', (e) => {
+    switch (e.key) {
+        case 'w':
+            keys.w.pressed = true
+            break
+        case 'a':
+            keys.a.pressed = true
+            break
+        case 's':
+            keys.s.pressed = true
+            break
+        case 'd':
+            keys.d.pressed = true
+            break    
+    }
+})
+
+// listen for keyup
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'w':
+            keys.w.pressed = false
+            break
+        case 'a':
+            keys.a.pressed = false
+            break
+        case 's':
+            keys.s.pressed = false
+            break
+        case 'd':
+            keys.d.pressed = false
+            break    
+    }
+})
