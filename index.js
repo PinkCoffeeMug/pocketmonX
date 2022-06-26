@@ -17,15 +17,45 @@ c.fillRect(0, 0, canvas.width, canvas.height)
 
 // html image objects and src
 const image = new Image() 
-image.src = './img/PokeTown.png' //draw town map
+image.src = './img/PokeTown.png' //town source map
 
 const playerImage = new Image()
-playerImage.src = './img/playerDown.png' //draw player
+playerImage.src = './img/playerDown.png' //player image
 
-// images are drawn when they're loaded 
-image.onload = () => {
-    
-    c.drawImage(image,-740, -600) //map starting point
+/*
+create sprite class 
+for easy bg manipulations later 
+*/
+
+class Sprite {
+    constructor({
+        position,
+        velocity,
+        image
+    }) {
+        this.position = position
+        this.image = image
+    }
+
+    draw() {
+        c.drawImage(this.image, -740, -600) //map
+    }
+}
+
+//background sprite
+const background = new Sprite({ 
+    position: {
+        x: -740,
+        y: -600
+    },
+    image: image
+})
+
+// request animation
+function animate() {
+    window.requestAnimationFrame(animate)
+    background.draw()
+    console.log('animate')
     
     // player starting point
     c.drawImage(
@@ -44,10 +74,12 @@ image.onload = () => {
         playerImage.height 
     )
 }
+animate()
 
-``` 
+/*
 player movements on the map
-```
+*/
+
 // listen for keyboard event with object e
 window.addEventListener('keydown', (e) => {
     switch (e.key) {
