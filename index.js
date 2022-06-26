@@ -44,3 +44,25 @@ image.onload = () => {
         playerImage.height 
     )
 }
+
+``` 
+player movements on the map
+```
+// listen for keyboard event with object e
+window.addEventListener('keydown', (e) => {
+    switch (e.key) {
+        case 'w':
+            console.log('pressed w key')
+            break
+        case 'a':
+            console.log('pressed a key')
+            break
+        case 's':
+            console.log('pressed s key')
+            break
+        case 'd':
+            console.log('pressed d key')
+            break    
+    }
+
+})
