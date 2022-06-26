@@ -70,6 +70,8 @@
 - [x] import and render map
 - [x] player creation
 - [ ] player movement
+  - [x] sprite
+  - [x] on keyboard
 - [ ] boundary collisions
 - [ ] foreground objects
 - [ ] movement animation
