@@ -51,6 +51,22 @@ const background = new Sprite({
     image: image
 })
 
+// keys: reference for listeners
+const keys = {
+    w: {
+        pressed: false
+    },
+    a: {
+        pressed: false
+    },
+    s: {
+        pressed: false
+    },
+    d: {
+        pressed: false
+    }
+}
+
 // request animation
 function animate() {
     window.requestAnimationFrame(animate)
@@ -73,28 +89,50 @@ function animate() {
         playerImage.width / 4, 
         playerImage.height 
     )
+
+    // if pressed keys, then move
+    if (keys.w.pressed) {
+        background.position.y = background.position.y - 3 // current pos on y-axis
+    }
 }
 animate()
 
 /*
-player movements on the map
+player movements on keyboard
 */
 
 // listen for keyboard event with object e
 window.addEventListener('keydown', (e) => {
     switch (e.key) {
         case 'w':
-            console.log('pressed w key')
+            keys.w.pressed = true
             break
         case 'a':
-            console.log('pressed a key')
+            keys.a.pressed = true
             break
         case 's':
-            console.log('pressed s key')
+            keys.s.pressed = true
             break
         case 'd':
-            console.log('pressed d key')
+            keys.d.pressed = true
             break    
     }
+})
 
+// listen for keyup
+window.addEventListener('keyup', (e) => {
+    switch (e.key) {
+        case 'w':
+            keys.w.pressed = false
+            break
+        case 'a':
+            keys.a.pressed = false
+            break
+        case 's':
+            keys.s.pressed = false
+            break
+        case 'd':
+            keys.d.pressed = false
+            break    
+    }
 })
